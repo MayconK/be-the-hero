@@ -26,8 +26,8 @@ export default function NewIncident() {
                     Authorization: ongID,
                 }
             });
-            history.push('/profile');
             document.getElementById('btLoading').style.cursor = 'default';
+            history.push('/profile');
         } catch (err) {
             document.getElementById('btLoading').style.cursor = 'default';
             alert('Erro ao cadastrar caso, tente novamente. ' + err)
